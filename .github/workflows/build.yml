@@ -10,10 +10,10 @@ jobs:
   build:
     uses: powsybl/github-ci/.github/workflows/build-base-docker-image-generic.yml@c81718897ef649fcdc685955a094bf724bf7fa9e
     with:
-      dockerImage: gridsuite/init-tools
+      dockerImage: gridsuite/ops-tools
       dockerUsername: gridsuiteci
       dockerRoUsername: rogridsuiteci
-      eventType: init_tools_updated
+      eventType: ops_tools_updated
     secrets:
       DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
       docker-ro-token: ${{ secrets.DOCKERHUB_RO_TOKEN }}
